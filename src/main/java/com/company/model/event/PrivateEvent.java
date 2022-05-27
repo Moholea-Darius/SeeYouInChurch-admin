@@ -6,8 +6,8 @@ public class PrivateEvent extends Event{
 
     private String location;
 
-    public PrivateEvent(int id, String eventName, LocalDateTime startDate, LocalDateTime endDate, int churchId, String location) {
-        super(id, eventName, startDate, endDate, churchId);
+    public PrivateEvent(int id, String eventName, LocalDateTime startDate, LocalDateTime endDate, String location) {
+        super(id, eventName, startDate, endDate);
         this.location = location;
     }
 

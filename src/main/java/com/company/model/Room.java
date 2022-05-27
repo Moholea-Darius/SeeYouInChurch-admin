@@ -8,14 +8,12 @@ public class Room {
     private int roomNumber;
     private int maxCapacity;
     private StatusRoom roomStatusRoom;
-    private int churchId;
 
-    public Room(int id, int roomNumber, int maxCapacity, StatusRoom roomStatusRoom, int churchId) {
+    public Room(int id, int roomNumber, int maxCapacity, StatusRoom roomStatusRoom ) {
         this.id = id;
         this.roomNumber = roomNumber;
         this.maxCapacity = maxCapacity;
         this.roomStatusRoom = roomStatusRoom;
-        this.churchId = churchId;
     }
 
     public int getId() {
@@ -50,11 +48,5 @@ public class Room {
         this.roomStatusRoom = roomStatusRoom;
     }
 
-    public int getChurchId() {
-        return churchId;
-    }
 
-    public void setChurchId(int churchId) {
-        this.churchId = churchId;
-    }
 }

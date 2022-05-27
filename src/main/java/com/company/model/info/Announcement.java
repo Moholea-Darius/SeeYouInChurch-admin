@@ -12,16 +12,14 @@ public class Announcement {
     private String message;
     private AnnouncementType announcementType;
     private LocalDateTime dateSent;
-    private int churchId;
 
 
-    public Announcement(int id, String sender, String message, AnnouncementType announcementType, LocalDateTime dateSent, int churchId) {
+    public Announcement(int id, String sender, String message, AnnouncementType announcementType, LocalDateTime dateSent) {
         this.id = id;
         this.sender = sender;
         this.message = message;
         this.announcementType = announcementType;
         this.dateSent = dateSent;
-        this.churchId = churchId;
     }
 
     public int getId() {
@@ -62,14 +60,6 @@ public class Announcement {
 
     public void setDateSent(LocalDateTime dateSent) {
         this.dateSent = dateSent;
-    }
-
-    public int getChurchId() {
-        return churchId;
-    }
-
-    public void setChurchId(int churchId) {
-        this.churchId = churchId;
     }
 
 }

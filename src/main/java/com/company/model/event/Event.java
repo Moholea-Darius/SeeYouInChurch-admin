@@ -8,14 +8,12 @@ abstract class Event {
     private String eventName;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
-    private int churchId;
 
-    public Event(int id, String eventName, LocalDateTime startDate, LocalDateTime endDate, int churchId) {
+    public Event(int id, String eventName, LocalDateTime startDate, LocalDateTime endDate) {
         this.id = id;
         this.eventName = eventName;
         this.startDate = startDate;
         this.endDate = endDate;
-        this.churchId = churchId;
     }
 
 }
