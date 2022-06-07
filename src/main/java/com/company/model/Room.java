@@ -7,13 +7,13 @@ public class Room {
     private int id;
     private int roomNumber;
     private int maxCapacity;
-    private StatusRoom roomStatusRoom;
+    private StatusRoom StatusRoom;
 
-    public Room(int id, int roomNumber, int maxCapacity, StatusRoom roomStatusRoom ) {
+    public Room(int id, int roomNumber, int maxCapacity, StatusRoom StatusRoom) {
         this.id = id;
         this.roomNumber = roomNumber;
         this.maxCapacity = maxCapacity;
-        this.roomStatusRoom = roomStatusRoom;
+        this.StatusRoom = StatusRoom;
     }
 
     public int getId() {
@@ -41,11 +41,11 @@ public class Room {
     }
 
     public StatusRoom getRoomStatus() {
-        return roomStatusRoom;
+        return StatusRoom;
     }
 
-    public void setRoomStatus(StatusRoom roomStatusRoom) {
-        this.roomStatusRoom = roomStatusRoom;
+    public void setRoomStatus(StatusRoom StatusRoom) {
+        this.StatusRoom = StatusRoom;
     }
 
 

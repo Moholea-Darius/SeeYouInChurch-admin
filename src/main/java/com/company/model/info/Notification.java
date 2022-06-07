@@ -13,9 +13,8 @@ public class Notification {
     private LocalDateTime dateSent;
     private LocalDateTime dateRead;
     private StatusNotification status;
-    private int userId;
 
-    public Notification(int id, String sender, String name, String message, LocalDateTime dateSent, LocalDateTime dateRead, StatusNotification status, int userId) {
+    public Notification(int id, String sender, String name, String message, LocalDateTime dateSent, LocalDateTime dateRead, StatusNotification status) {
         this.id = id;
         this.sender = sender;
         this.name = name;
@@ -23,7 +22,6 @@ public class Notification {
         this.dateSent = dateSent;
         this.dateRead = dateRead;
         this.status = status;
-        this.userId = userId;
     }
 
     public int getId() {
@@ -80,13 +78,5 @@ public class Notification {
 
     public void setStatus(StatusNotification status) {
         this.status = status;
-    }
-
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
     }
 }
